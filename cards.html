@@ -1,63 +1,138 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <title>cards</title>
     <style type="text/css">
-    	.mycard
-    	{
-    		background-color: rgb(0,120,180);
-    		width: 30%;
-    	}
+    .mycard {
+        background-color: rgb(0, 120, 180);
+        background-color: dodgerblue;
+        width: 30%;
+    }
     </style>
 </head>
+
 <body>
-	<!-- cards starting -->
-	<div class="card mycard m-2" >
-		<img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image"/>
-		<div class="card-body text-white">
-			<h5 class="card-title text-center">
-				This is card title
-			</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		</div>
-	</div>
-	<div class="card mycard m-2" >
-		<img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image"/>
-		<div class="card-body text-white">
-			<h5 class="card-title text-center">
-				This is card title
-			</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		</div>
-	</div>
-	<div class="card mycard m-2" >
-		<img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image"/>
-		<div class="card-body text-white">
-			<h5 class="card-title text-center">
-				This is card title
-			</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		</div>
-	</div>
-	<div class="card mycard m-2" >
-		<img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image"/>
-		<div class="card-body text-white">
-			<h5 class="card-title text-center">
-				This is card title
-			</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		</div>
-	</div>
-	
-
-
-
-
-
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- cards starting -->
+    <!-- without grid no resposiveness -->
+    <div class="card mycard m-2">
+        <img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image" />
+        <div class="card-body text-white">
+            <h5 class="card-title text-center">
+                This is card title
+            </h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card mycard m-2">
+        <img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image" />
+        <div class="card-body text-white">
+            <h5 class="card-title text-center">
+                This is card title
+            </h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <!-- Grid used for responisveness behaviour -->
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="card m-2" style="background-color: dodgerblue;">
+                <img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image" />
+                <div class="card-body text-white">
+                    <h5 class="card-title text-center">This is card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card m-2" style="background-color: dodgerblue;">
+                <img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image" />
+                <div class="card-body text-white">
+                    <h5 class="card-title text-center">This is card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card m-2" style="background-color: dodgerblue;">
+                <img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image" />
+                <div class="card-body text-white">
+                    <h5 class="card-title text-center">This is card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cards with headers and footers. -->
+    <div class="card text-center">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+    <!-- cards conating navbar -->
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <!-- Image overlay -->
+    <div class="card bg-dark text-white">
+        <img class="card-img" src="resources/images/nature.jpg" alt="Card image">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+        </div>
+    </div>
+    <!-- card-deck for responsiveness -->
+    <div class="card-deck">
+        <div class="card mycard m-2">
+            <img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image" />
+            <div class="card-body text-white">
+                <h5 class="card-title text-center">
+                    This is card title
+                </h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card mycard m-2">
+            <img class="card-img-top" src="resources/images/nature.jpg" alt="This is top image" />
+            <div class="card-body text-white">
+                <h5 class="card-title text-center">
+                    This is card title
+                </h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
