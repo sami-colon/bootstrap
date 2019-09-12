@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <title>Caraousel</title>
+</head>
+
+<body>	
+    <!-- <div class="carousel slide" id="new-carousel" data-ride="carousel">
+    	<div class="carousel-inner">
+    		<div class="carousel-item active">
+    			<img src="resources/images/nature.jpg" alt="" class="d-block w-100">
+    		</div>
+    		<div class="carousel-item">
+    			<img src="resources/images/nature.jpg" alt="" class="d-block w-100">
+    		</div>
+    		<div class="carousel-item">
+    			<img src="resources/images/nature.jpg" alt="" class="d-block w-100">
+    		</div>
+    	</div>  
+    	<a data-target="#new-carousel" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>  	
+    	<a data-target="#new-carousel" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+    </div> -->
+    <!-- carousel -> carousel inner(isme slides) and carousel->2 a for 2 controls-->
+    <div class="carousel slide" id="mycarouselActivity" data-ride="carousel">
+    	<!-- main body of carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="resources/images/nature.jpg" class="d-block w-100" alt="image">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/images/nature.jpg" class="d-block w-100" alt="image">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/images/nature.jpg" class="d-block w-100" alt="image">
+            </div>
+        </div>
+        <!-- controls of carousel -->
+        <a class="carousel-control-prev" data-target="#mycarouselActivity" data-slide="prev">
+        	<span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" data-slide="next" data-target="#mycarouselActivity">
+        	<span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- With Indicators -->
+    <div class="carousel slide" id="mycarouselActivity1" data-ride="carousel">
+    	<ol class="carousel-indicators">
+    		<li class="active" data-target="#mycarouselActivity1" data-slide-to="0"></li>
+    		<li data-target="#mycarouselActivity1" data-slide-to="1"></li>
+    		<li data-target="#mycarouselActivity1" data-slide-to="2"></li>
+    	</ol>
+    	<!-- main body of carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="resources/images/nature.jpg" class="d-block w-100" alt="image">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/images/nature.jpg" class="d-block w-100" alt="image">
+            </div>
+            <div class="carousel-item">
+                <img src="resources/images/nature.jpg" class="d-block w-100" alt="image">
+            </div>
+        </div>
+        <!-- controls of carousel -->
+        <a class="carousel-control-prev" data-target="#mycarouselActivity1" data-slide="prev">
+        	<span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" data-slide="next" data-target="#mycarouselActivity1">
+        	<span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
